@@ -1,35 +1,87 @@
-# opções válidas para o presidente
-nome_Pres1 = "Albert Einstein"
-nome_Pres2 = "Isaac Newton"
-nome_Pres3 = "Stephen Hawking"
-nome_Pres4 = "Bill Gates"
-nome_Pres5 = "Steve Jobs"
-
 # opções válidas para o governador
-nome_Gov1 = "Will Smith Ragatanga"
-nome_Gov2 = "Bruce Batman da Silva"
-nome_Gov3 = "Tony Stark Carvalho Pereira"
-nome_Gov4 = "Wesley Safadão"
-nome_Gov5 = "Chimbinha da Joelma Ferreira"
+candGov = {
+        '10':{
+                'nome':'Will Smith Ragatanga',
+                'votos':0,
+        },
+        '11':{
+                'nome':'Bruce Batman da Silva',
+                'votos':0,
+        },
+        '12':{
+                'nome':'Tony Stark Carvalho Pereira',
+                'votos': 0,
+        },
+        '13':{
+                'nome':'Wesley Safadão',
+                'votos':0,
+        },
+        '14':{
+                'nome':'Chimbinha da Joelma Ferreira',
+                'votos':0,
+        },
+        'b':{
+                'nome':'Votar em Branco',
+                'votos':0,
+        },
+        '16':{
+                'nome':'Votar nulo',
+                'votos':0,
+        },
+}
+
+# opções válidas para o presidente
+candPres = {
+        '1':{
+                'nome':'Albert Einstein',
+                'votos':0,
+        },
+        '2':{
+                'nome':'Isaac Newton',
+                'votos':0,
+        },
+        '3':{
+                'nome':'Stephen Hawking',
+                'votos':0,
+        },
+        '4':{
+                'nome':'Bill Gates',
+                'votos':0,
+        },
+        '5':{
+                'nome':'Steve Jobs',
+                'votos':0,
+        },
+        'b':{
+                'nome':'Votar em Branco',
+                'votos':0,
+        },
+        '7':{
+                'nome':'Votar nulo',
+                'votos':0,
+        },
+
+}
+
+
 
 def listar(): # fução para listar os candidatos opção 1 do menu
-    print("\n")
-    print("╔════════════Lista de candidatos════════════╗")
-    print("\n")
-    print(" ═══════════════ Governador ══════════════")
-    print("\n")
-    print(" Candidato(a) 1: %s" % (nome_Gov1))
-    print(" Candidato(a) 2: %s" % (nome_Gov2))
-    print(" Candidato(a) 3: %s" % (nome_Gov3))
-    print(" Candidato(a) 4: %s" % (nome_Gov4))
-    print(" Candidato(a) 5: %s" % (nome_Gov5))
-    print("\n")
-    print(" ═══════════════ Presidente ═══════════════")
-    print("\n")
-    print(" Candidato(a) 1: %s" % (nome_Pres1))
-    print(" Candidato(a) 2: %s" % (nome_Pres2))
-    print(" Candidato(a) 3: %s" % (nome_Pres3))
-    print(" Candidato(a) 4: %s" % (nome_Pres4))
-    print(" Candidato(a) 5: %s" % (nome_Pres5))
-    print("╚═════════════════════════════════════════════╝")
+    print(f"""
+    ╔════════════Lista de candidatos════════════╗
+     ═══════════════ Governador ══════════════ 
+      Candidato (a) 10: {candGov['10']['nome']}
+      Candidato (a) 11: {candGov['11']['nome']} 
+      Candidato (a) 12: {candGov['12']['nome']} 
+      Candidato (a) 13: {candGov['13']['nome']} 
+      Candidato (a) 14: {candGov['14']['nome']} 
+      ═══════════════ Presidente ═══════════════  
+      Candidato (a) 1: {candPres['1']['nome']}
+      Candidato (a) 2: {candPres['2']['nome']} 
+      Candidato (a) 3: {candPres['3']['nome']} 
+      Candidato (a) 4: {candPres['4']['nome']} 
+      Candidato (a) 5: {candPres['5']['nome']}
+    ╚═════════════════════════════════════════════╝                     
+""")
+
+
 

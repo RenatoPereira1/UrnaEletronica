@@ -5,7 +5,6 @@ def funcao_confirmacao(): # função para conirmação de voto 1 para sim 2 para
         print("\nVoto Registrado")
         return 1
     elif var_confirmar == "n":
-        print("\nVotação cancelada. ")
         return 2
     else:
         print("\nOpção inválida! ")
